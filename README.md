@@ -13,3 +13,10 @@ Pure Data code for baseball project
 
 ## Fonts to check out
  * [DSEG](https://www.keshikan.net/fonts-e.html)
+
+## Sound archive
+ * https://www.youtube.com/watch?v=WZaBgnm8FpA
+
+## Thoughts on sound
+ * we NEED the charge sound and the marching modulation organ sound!
+ 
