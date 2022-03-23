@@ -1,5 +1,5 @@
-#N canvas 694 1439 867 509 10;
-#X floatatom 656 390 5 0 0 0 - - - 0 0 1, f 5;
+#N canvas 572 388 867 509 10;
+#X floatatom 656 390 5 0 0 0 - - -, f 5;
 #X obj 457 283 translateXYZ 5 -3 0;
 #X obj 658 333 loadbang;
 #X obj 459 239 gemhead 52;
@@ -7,13 +7,13 @@
 #X obj 457 355 alpha;
 #X text 421 190 score;
 #X obj 527 305 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
-#fcfcfc #000000 #000000 0.2 256 0 0 1 0;
+-262144 -1 -1 0.2 256;
 #X obj 587 305 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
-#fcfcfc #000000 #000000 1 256 0 0 1 0;
+-262144 -1 -1 1 256;
 #X obj 407 305 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
-#fcfcfc #000000 #000000 1 256 0 0 1 0;
+-262144 -1 -1 1 256;
 #X obj 467 305 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
-#fcfcfc #000000 #000000 0.2 256 0 0 1 0;
+-262144 -1 -1 0.2 256;
 #X obj 367 154 inlet;
 #X obj 332 101 \$1;
 #X obj 436 100 \$2;
@@ -21,10 +21,9 @@
 #X obj 492 163 loadbang;
 #X obj 547 97 openpanel;
 #X msg 548 126 font \$1;
-#X obj 545 64 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 1;
+#X obj 545 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X obj 592 173 print;
-#X msg 427 211 font /home/user/Desktop/baseball/Segment7-4Gml.otf;
 #X obj 372 24 inlet;
 #X obj 412 24 inlet;
 #X obj 679 96 inlet;
@@ -38,39 +37,41 @@
 #X obj 456 383 text3d 0;
 #X msg 230 286 string 48 48 48 48;
 #X obj 232 245 loadbang;
-#X connect 0 0 31 1;
+#X msg 427 211 font /home/user/dev/pd/pd-baseball/Segment7-4Gml.otf
+;
+#X connect 0 0 30 1;
 #X connect 1 0 4 0;
-#X connect 2 0 24 0;
+#X connect 2 0 23 0;
 #X connect 3 0 1 0;
 #X connect 4 0 5 0;
-#X connect 5 0 31 0;
+#X connect 5 0 30 0;
 #X connect 7 0 4 3;
 #X connect 8 0 4 4;
 #X connect 9 0 4 1;
 #X connect 10 0 4 2;
-#X connect 11 0 31 0;
+#X connect 11 0 30 0;
 #X connect 12 0 1 1;
 #X connect 13 0 1 2;
 #X connect 14 0 12 0;
 #X connect 14 0 13 0;
-#X connect 15 0 20 0;
+#X connect 15 0 33 0;
 #X connect 16 0 17 0;
 #X connect 16 0 19 0;
-#X connect 17 0 31 0;
+#X connect 17 0 30 0;
 #X connect 18 0 16 0;
-#X connect 20 0 31 0;
-#X connect 21 0 12 0;
-#X connect 22 0 13 0;
-#X connect 23 0 31 1;
-#X connect 24 0 31 1;
-#X connect 25 0 28 0;
-#X connect 26 0 27 0;
-#X connect 28 0 26 0;
-#X connect 28 1 29 0;
-#X connect 29 0 26 1;
-#X connect 29 0 31 0;
-#X connect 29 1 26 0;
-#X connect 30 0 26 1;
-#X connect 30 0 31 0;
+#X connect 20 0 12 0;
+#X connect 21 0 13 0;
+#X connect 22 0 30 1;
+#X connect 23 0 30 1;
+#X connect 24 0 27 0;
+#X connect 25 0 26 0;
+#X connect 27 0 25 0;
+#X connect 27 1 28 0;
+#X connect 28 0 25 1;
+#X connect 28 0 30 0;
+#X connect 28 1 25 0;
+#X connect 29 0 25 1;
+#X connect 29 0 30 0;
+#X connect 31 0 30 0;
 #X connect 32 0 31 0;
-#X connect 33 0 32 0;
+#X connect 33 0 30 0;
