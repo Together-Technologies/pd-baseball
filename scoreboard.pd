@@ -1,5 +1,5 @@
-#N canvas 572 388 867 509 10;
-#X floatatom 656 390 5 0 0 0 - - -, f 5;
+#N canvas 0 294 867 509 10;
+#X floatatom 656 390 5 0 0 0 - - -;
 #X obj 457 283 translateXYZ 5 -3 0;
 #X obj 658 333 loadbang;
 #X obj 459 239 gemhead 52;
@@ -39,10 +39,23 @@
 #X obj 232 245 loadbang;
 #X msg 427 211 font /home/user/dev/pd/pd-baseball/Segment7-4Gml.otf
 ;
+#X obj 636 246 loadbang;
+#X msg 638 275 justify base center;
+#X obj 100 270 spigot 1;
+#X msg 137 233 0;
+#X msg 171 234 1;
+#X msg 98 138 stop;
+#X msg 52 135 bang;
+#X obj 64 52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 80 94 delay 3000;
+#X obj 88 169 metro 500;
+#X obj 124 198 delay 250;
+#X obj 65 22 inlet;
 #X connect 0 0 30 1;
 #X connect 1 0 4 0;
 #X connect 2 0 23 0;
-#X connect 3 0 1 0;
+#X connect 3 0 36 0;
 #X connect 4 0 5 0;
 #X connect 5 0 30 0;
 #X connect 7 0 4 3;
@@ -75,3 +88,17 @@
 #X connect 31 0 30 0;
 #X connect 32 0 31 0;
 #X connect 33 0 30 0;
+#X connect 34 0 35 0;
+#X connect 35 0 30 0;
+#X connect 36 0 1 0;
+#X connect 37 0 36 1;
+#X connect 38 0 36 1;
+#X connect 39 0 43 0;
+#X connect 40 0 43 0;
+#X connect 41 0 40 0;
+#X connect 41 0 42 0;
+#X connect 42 0 39 0;
+#X connect 43 0 37 0;
+#X connect 43 0 44 0;
+#X connect 44 0 38 0;
+#X connect 45 0 41 0;
