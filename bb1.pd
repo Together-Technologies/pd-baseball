@@ -308,11 +308,13 @@
 #X msg 271 527 \$1 500;
 #X msg 684 506 \$1 500;
 #X obj 234 182 delay 60000;
+#X msg 279 159 stop;
 #X connect 0 0 37 0;
 #X connect 2 0 15 0;
 #X connect 2 1 50 2;
 #X connect 3 0 2 0;
 #X connect 3 0 57 0;
+#X connect 3 0 77 0;
 #X connect 4 0 2 0;
 #X connect 5 0 2 0;
 #X connect 5 0 60 0;
@@ -381,3 +383,4 @@
 #X connect 74 0 63 0;
 #X connect 75 0 66 0;
 #X connect 76 0 59 0;
+#X connect 77 0 76 0;
